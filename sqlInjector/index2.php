@@ -10,11 +10,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $result = $db->multi_query(
         "select nome from usuarios where nome='$usuario' ");
-    if ($result->mysqli_num_rows() > 0) {
+
+
+    /*if ($result->mysqli_num_rows() > 0) {
         echo "usuário logado com sucesso";
     } else {
         echo "Problemas no login";
-    }
+    }*/
+    echo $result;
 }
 ?>
 
