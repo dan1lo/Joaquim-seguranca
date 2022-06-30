@@ -2,7 +2,7 @@
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     //mysql_connect('localhost', 'root', '');
     //mysql_select_db('joaquim');
-    $link = mysqli_connect("localhost", "root", "", "joaquim");
+    $link = mysqli_connect("localhost", "root", "", "senac");
     if (mysqli_connect_errno()) {
         printf("Connect failed: %s\n", mysqli_connect_error());
         exit();
